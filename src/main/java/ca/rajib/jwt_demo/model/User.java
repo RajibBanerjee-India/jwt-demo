@@ -16,8 +16,11 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
+
     @Column(unique = true)
     private String username;
+
+    @Column
     private String password;
 }
